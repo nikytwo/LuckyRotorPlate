@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="LuckyRotorPlate.LuckyControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" SizeChanged="UserControl_SizeChanged">
+    <Grid x:Name="grid">        
+        <ListBox Height="100" HorizontalAlignment="Right" Margin="0,0,10,10" Name="lbTest" VerticalAlignment="Bottom" Width="160" Opacity="0.5" Visibility="Hidden" />
+        <Grid Name="gdViewPort3D" HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="100">
+        </Grid>
+    </Grid>
+</UserControl>

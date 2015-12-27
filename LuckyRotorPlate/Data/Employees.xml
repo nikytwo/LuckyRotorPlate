@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<things>
+  <thing>
+    <name>孙小姐</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+</things>

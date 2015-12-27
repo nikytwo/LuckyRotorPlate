@@ -1,0 +1,47 @@
+﻿<Window x:Class="LuckyRotorPlate.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="幸运转盘" Height="600" Width="800" Icon="/LuckyRotorPlate;component/picasa.ico" WindowState="Maximized" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
+    <Window.Resources>
+
+        <CollectionViewSource 
+              Source="{Binding Source={x:Static Application.Current}, Path=Solutions}"   
+              x:Key="solutionList" />
+    </Window.Resources>
+    <Grid Name="gdMain"  DataContext="{Binding Source={StaticResource solutionList}}">
+        <Grid Name="gdForRotorPlate"  Height="Auto" Margin="0" VerticalAlignment="Stretch" Panel.ZIndex="10">
+        </Grid>
+        <Grid Height="226" HorizontalAlignment="Right" Name="gridTool" VerticalAlignment="Top" Width="200" Opacity="0" MouseEnter="gridTool_MouseEnter" MouseLeave="gridTool_MouseLeave">
+            <Button Height="23" HorizontalAlignment="Right" Margin="0,12,12,0" Name="btnManager" VerticalAlignment="Top" Width="Auto" Click="btnManager_Click">设置</Button>
+            <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,12,49,0" Name="cmSolutions" VerticalAlignment="Top" 
+                  Width="120" ItemsSource="{Binding}" Text="方案" IsSynchronizedWithCurrentItem="True" SelectionChanged="cmSolutions_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Path=Name}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Button Height="23" HorizontalAlignment="Right" Margin="0,41,12,0" Name="btnLucky" VerticalAlignment="Top" Width="75" Click="btnLucky_Click" Visibility="Hidden">准备</Button>
+            <TextBox Height="23" HorizontalAlignment="Right" Margin="0,41,109,0" Name="txtLoopTimes" VerticalAlignment="Top" Width="22" Visibility="Hidden">1</TextBox>
+            <TextBlock Height="21" HorizontalAlignment="Right" Margin="0,45,90,0" Name="textBlock1" VerticalAlignment="Top" Width="16" Text="次" Visibility="Hidden" />
+            <TextBlock Height="21" HorizontalAlignment="Right" Margin="0,45,134,0" Name="textBlock2" VerticalAlignment="Top" Width="15" Text="转" Visibility="Hidden" />
+            <ListView Margin="0,94,12,41" Name="lvResults" ItemsSource="{Binding Path=StepList/Players}"
+                  IsSynchronizedWithCurrentItem="True" HorizontalAlignment="Right" Width="Auto" Visibility="Hidden">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Header="抽 奖 项 目" />
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=ObtainedGift}" Header="中 奖 项 目" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button Height="23" HorizontalAlignment="Right" Margin="0,0,94,12" Name="btnExport" VerticalAlignment="Bottom" Width="75" Click="btnExport_Click" Visibility="Hidden">导出</Button>
+            <Button Height="23" HorizontalAlignment="Right" Margin="0,0,13,12" Name="btnPrint" VerticalAlignment="Bottom" Width="75" Click="btnPrint_Click" Visibility="Hidden">打印</Button>
+            <TextBlock Height="21" HorizontalAlignment="Right" Margin="0,70,49,0" Name="textBlock3" VerticalAlignment="Top" Width="120" Text="结果：" Visibility="Hidden" />
+        </Grid>
+        <Image Height="80" HorizontalAlignment="Right" Margin="0,76,50,50" Name="imgBtnStart" Stretch="Fill" ToolTip="开始抽奖" 
+               VerticalAlignment="Bottom" Width="80" MouseEnter="imgBtnStart_MouseEnter" 
+               MouseLeave="imgBtnStart_MouseLeave" MouseDown="imgBtnStart_MouseDown" Panel.ZIndex="1000" />
+    </Grid>
+</Window>

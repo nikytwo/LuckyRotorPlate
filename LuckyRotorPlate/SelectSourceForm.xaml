@@ -1,0 +1,13 @@
+﻿<Window x:Class="LuckyRotorPlate.SeleteSourceForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="项目来源选择" Height="167" Width="161" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="False" WindowStyle="SingleBorderWindow" SnapsToDevicePixels="False" Icon="/LuckyRotorPlate;component/picasa.ico">
+    <Grid>
+        <RadioButton Height="16" Margin="5" Name="rbFromEmployees" VerticalAlignment="Top" IsChecked="True">从员工列表获取项目</RadioButton>
+        <RadioButton Height="16" Margin="5,27,5,0" Name="rbFromGifts" VerticalAlignment="Top">从礼品列表获取项目</RadioButton>
+        <RadioButton Margin="5,49,42,64" Name="rbFromNumbers">顺序数,数量=</RadioButton>
+        <RadioButton Margin="5,71,5,0" Name="rbFromCustom" Height="14" VerticalAlignment="Top" Visibility="Visible">自定义</RadioButton>
+        <Button Height="23" Margin="43,0,49,12" Name="btnOK" VerticalAlignment="Bottom" Click="btnOK_Click">确定</Button>
+        <TextBox Margin="97,45,0,0" Name="txtcount" Padding="1" HorizontalAlignment="Left" Width="30" Height="23" VerticalAlignment="Top">2</TextBox>
+    </Grid>
+</Window>

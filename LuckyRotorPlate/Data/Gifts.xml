@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<things>
+  <thing>
+    <name>八方来财</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>步步高升</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>财源广进 </name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>出入平安</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>福如东海</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>恭喜发财</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>国泰平安</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>合家幸福</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>和气生财</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>吉祥如意</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>金玉满堂</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>近水楼台 </name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>九九同心</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>六六大顺</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>年年有余</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>鹏程万里</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>七星高照</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>三星拱户</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>三羊开泰</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>神采奕奕 </name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>升官发财 </name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>生意兴隆</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>十全十美</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>寿比南山</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>四季平安</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>松柏长青</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>岁岁平安</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>桃开连理</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>万事如意</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>万事胜意</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>五福临门</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>心想事成</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>一帆风顺 </name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>招财进宝</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>龙翔虎跃</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>龙翔凤舞</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>龙争虎斗</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>攀龙附凤</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>生龙活虎</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>卧虎藏龙</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>蛟龙得水</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>龙凤呈祥</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>龙蟠虎踞</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>二龙腾飞</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>龙马精神 </name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>龙精虎猛</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>龙腾虎跃</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门A</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门B</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门C</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门D</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门E</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门F</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门G</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门H</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门I</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门J</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门K</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>部门L</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>奖品1</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>奖品2</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>奖品3</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>奖品4</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>大奖</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>大奖品1</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>大奖品2</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>大奖品3</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+  <thing>
+    <name>大奖品4</name>
+    <value>1</value>
+    <remark>
+    </remark>
+    <excludes />
+  </thing>
+</things>

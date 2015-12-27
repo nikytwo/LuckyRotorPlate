@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<solutions>
+  <solution>
+    <name>抽顺序</name>
+    <drap>0.01</drap>
+    <way>
+    </way>
+    <steps>
+      <step>
+        <name>新步骤</name>
+        <sort>
+        </sort>
+        <pies>
+          <thing>
+            <name>部门D</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>部门A</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>部门C</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>部门B</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+        </pies>
+        <players>
+          <thing>
+            <name>第一组</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes />
+          </thing>
+          <thing>
+            <name>第二组</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes />
+          </thing>
+          <thing>
+            <name>第三组</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes />
+          </thing>
+          <thing>
+            <name>第四组</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes />
+          </thing>
+        </players>
+        <globalExcludes />
+      </step>
+    </steps>
+  </solution>
+  <solution>
+    <name>人人奖</name>
+    <drap>0.005</drap>
+    <way>normal</way>
+    <steps>
+      <step>
+        <name>新步骤</name>
+        <sort>
+        </sort>
+        <pies>
+          <thing>
+            <name>奖品4</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>奖品3</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>大奖</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>奖品2</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>奖品1</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+        </pies>
+        <players>
+          <thing>
+            <name>龙马精神 </name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes>
+              <thing>
+                <name>卡2+大奖机会</name>
+              </thing>
+            </excludes>
+          </thing>
+          <thing>
+            <name>龙腾虎跃</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes>
+              <thing>
+                <name>手机1</name>
+              </thing>
+              <thing>
+                <name>奖品1</name>
+              </thing>
+              <thing>
+                <name>手机2</name>
+              </thing>
+              <thing>
+                <name>卡1</name>
+              </thing>
+            </excludes>
+          </thing>
+          <thing>
+            <name>龙凤呈祥</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes>
+              <thing>
+                <name>卡2+大奖机会</name>
+              </thing>
+            </excludes>
+          </thing>
+          <thing>
+            <name>龙精虎猛</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes>
+              <thing>
+                <name>卡2+大奖机会</name>
+              </thing>
+            </excludes>
+          </thing>
+          <thing>
+            <name>龙翔凤舞</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes>
+              <thing>
+                <name>卡2+大奖机会</name>
+              </thing>
+            </excludes>
+          </thing>
+        </players>
+        <globalExcludes />
+      </step>
+    </steps>
+  </solution>
+  <solution>
+    <name>大奖</name>
+    <drap>0.005</drap>
+    <way>normal</way>
+    <steps>
+      <step>
+        <name>新步骤</name>
+        <sort>
+        </sort>
+        <pies>
+          <thing>
+            <name>龙腾虎跃24</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃01</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃02</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃03</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃04</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃05</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃06</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃07</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃08</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃09</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃10</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃11</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃12</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃13</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃14</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃15</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃16</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃17</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃18</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃19</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃20</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃21</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃22</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+          <thing>
+            <name>龙腾虎跃23</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <excludes />
+          </thing>
+        </pies>
+        <players>
+          <thing>
+            <name>大奖品1</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>龙腾虎跃16</obtainedGift>
+            <excludes />
+          </thing>
+          <thing>
+            <name>大奖品2</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes />
+          </thing>
+          <thing>
+            <name>大奖品3</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes />
+          </thing>
+          <thing>
+            <name>大奖品4</name>
+            <value>1</value>
+            <remark>
+            </remark>
+            <obtainedGift>
+            </obtainedGift>
+            <excludes />
+          </thing>
+        </players>
+        <globalExcludes />
+      </step>
+    </steps>
+  </solution>
+</solutions>

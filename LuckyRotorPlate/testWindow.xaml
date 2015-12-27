@@ -1,0 +1,10 @@
+﻿<Window x:Class="LuckyRotorPlate.testWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="testWindow" Height="600" Width="800">
+    <Grid Name="gdTest" >
+        <ListBox Height="Auto" Margin="0,40,0,0" Name="listBox1" VerticalAlignment="Stretch" />
+        <Button Height="23" HorizontalAlignment="Left" Margin="222,9,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click">Button</Button>
+        <TextBox Height="23" Margin="311,11,347,0" Name="textBox1" VerticalAlignment="Top">100</TextBox>
+    </Grid>
+</Window>

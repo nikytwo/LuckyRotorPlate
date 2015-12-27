@@ -1,0 +1,10 @@
+Setup/Debug
+Setup/Release
+*~
+LuckyRotorPlate/bin
+LuckyRotorPlate/obj
+_UpgradeReport_Files/
+
+*.user
+*.suo
+UpgradeLog.XML

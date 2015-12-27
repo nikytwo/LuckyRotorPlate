@@ -1,0 +1,171 @@
+﻿<Window x:Class="LuckyRotorPlate.ManagerWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="管理配置" Height="600" Width="800" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" Topmost="False" Icon="/LuckyRotorPlate;component/img/setting.ico">
+    <Window.Resources>
+
+        <CollectionViewSource 
+              Source="{Binding Source={x:Static Application.Current}, Path=Gifts}"   
+              x:Key="giftList" />
+        <CollectionViewSource 
+              Source="{Binding Source={x:Static Application.Current}, Path=Employees}"   
+              x:Key="employeeList" />
+        <CollectionViewSource 
+              Source="{Binding Source={x:Static Application.Current}, Path=Solutions}"   
+              x:Key="solutionList" />
+    </Window.Resources>
+    <Grid Grid.IsSharedSizeScope="False" ShowGridLines="False">
+        <TabControl Height="Auto" Margin="12" Name="tabControl1" Width="Auto">
+            <TabItem Header="员工" Name="tabItem1">
+                <Grid>
+                    <DockPanel Height="Auto" Margin="0" Name="dockPanel1" VerticalAlignment="Stretch">
+                        <ToolBar DockPanel.Dock="Top"  Height="26" Name="toolBar1" Width="Auto" VerticalAlignment="Top">
+                            <Button Name="LoadEmployees" Click="LoadEmployees_Click">导入</Button>
+                            <Button Name="AddEmployee" Click="AddEmployee_Click">新增</Button>
+                            <Button Name="EditEmployee" Click="EditEmployee_Click">编辑</Button>
+                            <Button Name="DelEmployee" Click="DelEmployee_Click">删除</Button>
+                            <Button Name="SaveEmployee" Click="Save_Click">保存</Button>
+                        </ToolBar>
+                        <ListView Name="listView1" Width="Auto" ItemsSource="{Binding Source={StaticResource employeeList}}" 
+                                  IsSynchronizedWithCurrentItem="True" MouseDoubleClick="listView1_MouseDoubleClick">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Header="名称" />
+                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Remark}" Header="备注" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </DockPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="礼品">
+                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <DockPanel Height="Auto" Margin="0" Name="dockPanel2" VerticalAlignment="Stretch">
+                        <ToolBar DockPanel.Dock="Top"  Height="26" Name="toolBar2" Width="Auto" VerticalAlignment="Top">
+                            <Button Name="LoadGifts" Click="LoadGifts_Click">导入</Button>
+                            <Button Name="AddGift" Click="AddGift_Click">新增</Button>
+                            <Button Name="EditGift" Click="EditGift_Click">编辑</Button>
+                            <Button Name="DelGift" Click="DelGift_Click">删除</Button>
+                            <Button Name="SaveGift" Click="Save_Click">保存</Button>
+                        </ToolBar>
+                        <ListView Name="listView2" Width="Auto" ItemsSource="{Binding Source={StaticResource giftList}}" 
+                                  IsSynchronizedWithCurrentItem="True" MouseDoubleClick="listView2_MouseDoubleClick">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Header="名称" />
+                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Value}" Header="数量" />
+                                    <GridViewColumn DisplayMemberBinding="{Binding Path=Remark}" Header="备注" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </DockPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="方案">
+                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <DockPanel Height="Auto" Margin="0" Name="dockPanel3" VerticalAlignment="Stretch" 
+                               DataContext="{Binding Source={StaticResource solutionList}}">
+                        <ToolBar DockPanel.Dock="Top"  Height="26" Name="toolBar3" Width="Auto" VerticalAlignment="Top">
+                            <Button Name="SaveSolutions" Click="Save_Click">保存</Button>
+                        </ToolBar>
+                        <Grid Height="Auto" Name="grid1" Width="Auto" HorizontalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150" />
+                                <ColumnDefinition Width="150" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition Height="26" />
+                                <RowDefinition Height="26" />
+                            </Grid.RowDefinitions>
+                            <ListBox Height="Auto" Margin="0" Name="lbSolutions" VerticalAlignment="Stretch" 
+                                     ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Path=Name}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <Button Grid.Row="1" Margin="0" Name="btAddSolution" Click="btAddSolution_Click">添加</Button>
+                            <Button Grid.Row="2" Margin="0" Name="btDelSolution" Click="btDelSolution_Click">删除</Button>
+                            <Border BorderThickness="1" BorderBrush="Gray">
+                            </Border>
+                            <TextBox Grid.Column="1" Height="23" Margin="2,2,0,0" Name="txtSolutionName" VerticalAlignment="Top" 
+                                     HorizontalAlignment="Left" Width="120" Text="{Binding Path=Name}" />
+                            <ListBox Grid.Column="1" Height="Auto" Margin="0,30,0,0" Name="lbStepList" VerticalAlignment="Stretch" 
+                                     ItemsSource="{Binding Path=StepList}" IsSynchronizedWithCurrentItem="True">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding Path=Name}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <Button Height="Auto" Margin="0" Name="btnAddStep" VerticalAlignment="Stretch" 
+                                    Grid.Column="1" Grid.Row="1" Click="btnAddStep_Click">添加</Button>
+                            <Button Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" Margin="0" 
+                                    Name="btnDelStep" Width="Auto" Click="btnDelStep_Click">删除</Button>
+                        </Grid>
+                        <Border BorderThickness="1" BorderBrush="Gray">
+                        <Grid Height="Auto" Width="Auto">
+                            <TextBox Grid.Column="2" Height="23" HorizontalAlignment="Left" Margin="2,2,0,0" Name="txtStepName" VerticalAlignment="Top" Width="120" Text="{Binding Path=StepList/Name}" />
+                            <ListBox HorizontalAlignment="Left" Margin="3,57,0,0" Name="lbPies" Width="120" Height="119" VerticalAlignment="Top" 
+                                     ItemsSource="{Binding Path=StepList/Pies}" IsSynchronizedWithCurrentItem="True" MouseDoubleClick="lbPies_MouseDoubleClick">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding Path=Name}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                                <ListBox Height="119" HorizontalAlignment="Right" Margin="0,57,89,0" Name="lbPlayers" VerticalAlignment="Top" Width="120" 
+                                     ItemsSource="{Binding Path=StepList/Players}" IsSynchronizedWithCurrentItem="True" MouseDoubleClick="lbPlayers_MouseDoubleClick">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding Path=Name}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                                <Button Height="23" Margin="129,75,0,0" Name="btnAddPie" VerticalAlignment="Top" Click="btAddPie_Click" HorizontalAlignment="Left" Width="75">添加</Button>
+                            <Button Height="23" Margin="129,105,0,0" Name="btnDelPie" VerticalAlignment="Top" Click="btnDelPie_Click" HorizontalAlignment="Left" Width="75">删除</Button>
+                            <Button HorizontalAlignment="Right" Margin="0,75,7,0" Name="btnAddPlayer" Width="75" Click="btnAddPlayer_Click" Height="23" VerticalAlignment="Top">添加</Button>
+                            <Button Height="23" HorizontalAlignment="Right" Margin="0,105,7,0" Name="btnDelPlayer" VerticalAlignment="Top" Width="75" Click="btnDelPlayer_Click">删除</Button>
+                            <ListView Margin="2,255,2,27" Name="lstResults" ItemsSource="{Binding Path=StepList/Players}">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Header="抽 奖 项 目" />
+                                        <GridViewColumn DisplayMemberBinding="{Binding Path=ObtainedGift}" Header="中 奖 项 目" />
+                                        <!--<GridViewColumn DisplayMemberBinding="{Binding Path=Value}" Header="中奖数量" />-->
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                            <TextBlock Grid.Column="2" Height="21" HorizontalAlignment="Left" Margin="2,35,0,0" Name="textBlock1" VerticalAlignment="Top" Width="120" Text="圆盘：" />
+                            <TextBlock Grid.Column="2" Height="21" HorizontalAlignment="Right" Margin="0,35,90,0" Name="textBlock2" VerticalAlignment="Top" Width="120" Text="抽奖项目：" />
+                            <TextBlock HorizontalAlignment="Left" Margin="2,234,0,223" Name="textBlock3" Width="120" Text="抽奖结果：" />
+                            <Button Height="23" Margin="0,0,101,0" Name="btnPrintResults" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="76" Click="btnPrintResults_Click">打印</Button>
+                                <Button Height="23" Margin="129,2,0,0" Name="btnExcludes" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Click="btnExcludes_Click">高级</Button>
+                                <Button Height="23" HorizontalAlignment="Right" Margin="0,135,7,0" Name="btnEditPlayer" VerticalAlignment="Top" Width="75" Click="btnEditPlayer_Click">编辑</Button>
+                                <Button Height="23" Margin="129,135,0,0" Name="btnEditPie" VerticalAlignment="Top" Click="btnEditPie_Click" HorizontalAlignment="Left" Width="75">编辑</Button>
+                                <CheckBox Height="16" HorizontalAlignment="Left" Margin="5,183,0,0" Name="chkStepToPies" VerticalAlignment="Top" Width="120" Checked="chkStepToPies_Checked" Visibility="Hidden">从其他步骤获取</CheckBox>
+                                <ComboBox Height="23" Margin="5,205,0,0" Name="cmStepForPie" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" IsEnabled="False" Visibility="Hidden" />
+                                <CheckBox HorizontalAlignment="Right" Margin="0,183,90,0" Name="chkStepToPlayers" Width="120" Height="16" VerticalAlignment="Top" Visibility="Hidden">从其他步骤获取</CheckBox>
+                                <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,205,90,0" Name="cmStepForPlayer" VerticalAlignment="Top" Width="120" IsEnabled="False" Visibility="Hidden" />
+                                <Button Height="23" Margin="177,0,190,0" Name="btnExportResults" VerticalAlignment="Bottom" Click="btnExportResults_Click">导出</Button>
+                                <Button Height="23" HorizontalAlignment="Left" Margin="87,0,0,0" Name="btnClearResults" VerticalAlignment="Bottom" Width="75" Click="btnClearResults_Click">清除</Button>
+                                <TextBlock Height="21" HorizontalAlignment="Right" Margin="0,4,154,0" Name="textBlock4" VerticalAlignment="Top" Width="56" Text="阻力系数:" />
+                                <TextBox Height="23" HorizontalAlignment="Right" Margin="0,2,89,0" Name="txtDrap" VerticalAlignment="Top" Width="59" TextChanged="txtDrap_TextChanged" ToolTip="请输入0-1之间的小数。" Text="{Binding Path=Drap}"></TextBox>
+                            </Grid>
+                        </Border>
+                    </DockPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

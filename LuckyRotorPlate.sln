@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyRotorPlate", "LuckyRotorPlate\LuckyRotorPlate.csproj", "{B30DCBF0-F4F6-4E0C-A2EA-9067399DD73B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{AC680A51-38DD-400F-A703-D09166F9B984}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B30DCBF0-F4F6-4E0C-A2EA-9067399DD73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30DCBF0-F4F6-4E0C-A2EA-9067399DD73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30DCBF0-F4F6-4E0C-A2EA-9067399DD73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30DCBF0-F4F6-4E0C-A2EA-9067399DD73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC680A51-38DD-400F-A703-D09166F9B984}.Debug|Any CPU.ActiveCfg = Debug
+		{AC680A51-38DD-400F-A703-D09166F9B984}.Release|Any CPU.ActiveCfg = Release
+		{AC680A51-38DD-400F-A703-D09166F9B984}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
